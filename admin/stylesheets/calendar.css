@@ -1,0 +1,104 @@
+/*** Events Calendar ***/ 
+.event_details img{max-width: 300px; height: auto;}
+
+@media (min-width: 768px) {
+	#events_calendar .full_week_name,
+	#events_calendar .abrev_week_name{display: none;}
+	#events_calendar .short_week_name{display: block !important}
+
+	#events_calendar #calendar_title .large_button{display: block !important}
+	#events_calendar #calendar_title .small_button{display: none !important}
+
+	#events_calendar td{height: 110px !important;}
+
+	#events_calendar .today .day_of_month{background: #337ab7 !important}
+	#events_calendar td .day_of_month{text-align: left !important;color: #FFFFFF !important; padding: 0 0 0 5px; margin: 0 !important}
+	#events_calendar td.current_month .day_of_month{background: #B2B2B2;}
+	#events_calendar td.prev_month .day_of_month,
+	#events_calendar td.next_month .day_of_month{background: #E0E0E0;}
+	#events_calendar tr td.prev_month, 
+	#events_calendar tr td.next_month{background: #FCFCFC;}
+	#events_calendar tr td.current_month:hover{box-shadow: rgba(0,0,0,.2) 0 0 10px; background: #f7f7f7;}
+
+	#events_calendar .events{display: block !important;}
+	#events_calendar .events_compact{display: none;}
+	#events_calendar #calendar_title .left, 
+	#events_calendar #calendar_title .right{width: 145px;}
+}
+
+@media (min-width: 992px) {
+	#events_calendar .short_week_name,
+	#events_calendar .abrev_week_name{display: none !important}
+	#events_calendar .full_week_name{display: block !important}
+}
+
+#events_calendar_container{position: relative;}
+#events_calendar_container .loading{display: none;position: absolute; background: rgba(255,255,255, 0.7); width: 100%; height: 100%; z-index: 100}
+#events_calendar_container .loading > div{margin: 300px 0; text-align: center; color: rgb(108, 122, 137);}
+
+table#events_calendar{width: 100%}
+#events_calendar .full_week_name,
+#events_calendar .short_week_name{display: none;}
+#events_calendar th, 
+#events_calendar td{padding: 0;}
+#events_calendar .calendar_cell{cursor:pointer}
+#events_calendar #events_calendar_weekdays th{font-size: 12pt; text-align: center; background: #666666; color: #FFFFFF; padding: 14px 0; width: 14.28%; text-transform: uppercase; letter-spacing: 1.5px;}
+#events_calendar td{height: 50px; vertical-align: top;}
+#events_calendar td, 
+#events_calendar #events_calendar_weekdays th{border-bottom: 1px solid #d2d2d2;border-right: 1px solid #d2d2d2;}
+#events_calendar tr td:first-child, 
+#events_calendar #events_calendar_weekdays th:first-child{border-left: 1px solid #d2d2d2;}
+
+#events_calendar .past{opacity: 0.5;}
+
+#events_calendar #calendar_title th{padding: 8px 0 5px; text-align: center; border: none}
+#events_calendar #calendar_title th h3{margin:0;}
+#events_calendar #calendar_title table th{border: none;}
+#events_calendar #calendar_title table{margin: 0;}
+#events_calendar #calendar_title a{display: block;}
+#events_calendar #calendar_title .large_button{display: none;}
+#events_calendar #calendar_title .small_button{display: block}
+#events_calendar #calendar_title .left, 
+#events_calendar #calendar_title .right{min-width: 70px;}
+#events_calendar #calendar_title .left a{margin-right: 15px;}
+#events_calendar #calendar_title .right a{margin-left: 15px;}
+#events_calendar #calendar_title .left .large_button i{margin-right: 10px;}
+#events_calendar #calendar_title .right .large_button i{margin-left: 10px;}
+
+#events_calendar #view_as td{height: auto !important; text-align: right;border: none;}
+#events_calendar #view_as td a{cursor: pointer;}
+#events_calendar #view_as td a i{margin-right: 10px;}
+
+/** Calendar Legend **/
+#events_calendar #calendar_legend td{height: auto !important; border: none; text-align: center; padding-bottom: 10px;}
+#events_calendar #calendar_legend .category-indicator{margin: 0 5px;}
+#events_calendar #calendar_legend .category-indicator i{margin-right: 5px;}
+
+#events_calendar td .day_of_month{color: #999; text-align: center; margin: 3px 0; font-size: 12pt;}
+#events_calendar td.current_month .day_of_month{color: #333;}
+#events_calendar tr td.prev_month, 
+#events_calendar tr td.next_month{background: #FCFCFC;}
+#events_calendar tr td.current_month:hover{box-shadow: rgba(0,0,0,.2) 0 0 10px; background: #f7f7f7;}
+
+#events_calendar .event{text-decoration: none;display: block; padding: 5px; margin-top: 3px;margin-left: 15px; position: relative}
+#events_calendar .event:before{font-family: 'FontAwesome'; content: '\f111'; position: absolute; margin-left: -12px; top: 10px; font-size: 7pt; color: #ff9600;}
+#events_calendar.calendar_list .event:before{font-family: 'FontAwesome'; content: '\f111'; position: absolute; margin-left: -15px; top: 13px; font-size: 7pt; color: #ff9600;}
+
+#events_calendar .events{display: none;}
+#events_calendar .events_compact{color: #085076; text-align: center; font-size: 8pt;}
+
+#day_events .event_title a,
+#events_calendar.calendar_list .event_title a{color: #088BA6; font-size: 14pt; text-decoration: none !important;}
+#day_events .event_title a:hover,
+#events_calendar.calendar_list .event_title a:hover{color: #1EAEDB;}
+#day_events .event_date,
+#events_calendar.calendar_list .event_date{font-size: 12pt; padding: 5px 0 10px; color: #215284;}
+#day_events .event_date i,
+#events_calendar.calendar_list .event_date i{margin-right: 10px}
+#day_events img,
+#events_calendar.calendar_list img{width: 100%;}
+#day_events hr:last-child,
+#events_calendar.calendar_list .day hr:last-child{display: none;}
+
+#events_calendar.calendar_list .day{margin-bottom: 70px;}
+#events_calendar.calendar_list td{border: none !important}

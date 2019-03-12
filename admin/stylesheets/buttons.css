@@ -1,0 +1,93 @@
+/* red */
+.btn-red {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active {
+  background-color: #d43f3a;
+  border-color: #c9302c;
+}
+.btn-red.disabled:hover,
+.btn-red.disabled:focus,
+.btn-red.disabled:active,
+.btn-red.disabled.active,
+.btn-red[disabled]:hover,
+.btn-red[disabled]:focus,
+.btn-red[disabled]:active,
+.btn-red[disabled].active,
+fieldset[disabled] .btn-red:hover,
+fieldset[disabled] .btn-red:focus,
+fieldset[disabled] .btn-red:active,
+fieldset[disabled] .btn-red.active {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+/* orange */
+/* yellow */
+.btn-yellow {
+  background-color: #ec971f;
+  border-color: #ec971f;
+}
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active {
+  background-color: #df8a13;
+  border-color: #c77c11;
+}
+.btn-yellow.disabled:hover,
+.btn-yellow.disabled:focus,
+.btn-yellow.disabled:active,
+.btn-yellow.disabled.active,
+.btn-yellow[disabled]:hover,
+.btn-yellow[disabled]:focus,
+.btn-yellow[disabled]:active,
+.btn-yellow[disabled].active,
+fieldset[disabled] .btn-yellow:hover,
+fieldset[disabled] .btn-yellow:focus,
+fieldset[disabled] .btn-yellow:active,
+fieldset[disabled] .btn-yellow.active {
+  background-color: #ec971f;
+  border-color: #ec971f;
+}
+
+/* green */
+.btn-green {
+	background-color: #469408;
+	border-color: #469408;
+	color: #FFF;
+}
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active,
+.btn-green.active {
+  background-color: #2f6405;
+  border-color: #2f6405;
+  color: #FFF;
+}
+.btn-green.disabled:hover,
+.btn-green.disabled:focus,
+.btn-green.disabled:active,
+.btn-green.disabled.active,
+.btn-green[disabled]:hover,
+.btn-green[disabled]:focus,
+.btn-green[disabled]:active,
+.btn-green[disabled].active,
+fieldset[disabled] .btn-green:hover,
+fieldset[disabled] .btn-green:focus,
+fieldset[disabled] .btn-green:active,
+fieldset[disabled] .btn-green.active {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+
+/* blue */
+/* purple */
+/* pink */
+/* brown */
+/* black */
