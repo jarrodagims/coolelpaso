@@ -11,19 +11,19 @@
 # Database Information
 /***************************************************************************/
 // @global string $GLOBALS['host']
-$GLOBALS['host'] = 'mariadb-157.wc2.phx1.stabletransit.com';
+$GLOBALS['host'] = 'coolep.agimsweb.com';
 
 // @global string $GLOBALS['database']
-$GLOBALS['database'] = '453466_coolelpaso';
+$GLOBALS['database'] = 'stagingcoolelpaso';
 
 // @global string $GLOBALS['username']
-$GLOBALS['username'] = '453466_coolelpa';
+$GLOBALS['username'] = 'coolmysql';
 
 // @global string $GLOBALS['password']
-$GLOBALS['password'] = 'Sstg2564!';
+$GLOBALS['password'] = 'enX<ZhpuP?!Y87sy';
 
 // @global string $GLOBALS['server']
-$GLOBALS['server'] = 'mariadb-157.wc2';
+$GLOBALS['server'] = 'coolep.agimsweb.com';
 
 // @global string $GLOBALS['pdo']
 $GLOBALS['pdo'] = array($GLOBALS['host'],$GLOBALS['username'],$GLOBALS['password'],$GLOBALS['database']);
@@ -32,7 +32,7 @@ $GLOBALS['pdo'] = array($GLOBALS['host'],$GLOBALS['username'],$GLOBALS['password
 if($GLOBALS['host'] == '127.0.0.1'){
 	$clientHostname = '207.246.242.127';
 }else{
-	$clientHostname = 'mariadb-124.wc2.phx1.stabletransit.com';
+	$clientHostname = 'coolep.agimsweb.com';
 }
 
 // @global string $GLOBALS['pdo_ticketing_db']
@@ -78,7 +78,7 @@ $GLOBALS['site_name'] = "Stanton Street Admin Development";
 $GLOBALS['email_domain'] = "@stantonstreet.com";
 
 // @global string $GLOBALS['live_domain']
-$GLOBALS['LIVE_DOMAIN'] = "www.coolelpaso.com";
+$GLOBALS['LIVE_DOMAIN'] = "www.coolelpaso.dreamhosters.com";
 
 // @global string $GLOBALS['test_domain']
 $GLOBALS['test_domain'] = "http://www.stantonstreet.com/";
@@ -183,6 +183,6 @@ $GLOBALS['sstg_admin'] = 'Stanton Street Administrator';
 $GLOBALS['sstg_admin_links'] = array();
 
 array_push($GLOBALS['sstg_admin_links'], 
-	$link = array('Database', 'fa-database', 'https://mysql.dfw1-2.websitesettings.com/index.php?server='.$GLOBALS['server'].'&pma_username='.$GLOBALS['username'].'&pma_password='.$GLOBALS['password'],'external'));
+	$link = array('Database', 'fa-database', 'https://mysql.coolep.agimsweb.com?server='.$GLOBALS['server'].'&pma_username='.$GLOBALS['username'].'&pma_password='.$GLOBALS['password'],'external'));
 
 ?>
